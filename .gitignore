@@ -1,0 +1,25 @@
+# Large data files - too big for GitHub
+archive.npy
+archive.pth
+archive.pkl
+archive.csv
+
+# Dataset folders
+archivemimic-cxr-dataset
+archivepreprocessed_images
+
+# Python cache
+__pycache__
+.pyc
+.pyo
+.env
+
+# VS Code
+.vscode
+
+# Streamlit
+.streamlit
+
+# OS files
+.DS_Store
+Thumbs.db
