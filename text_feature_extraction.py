@@ -52,5 +52,5 @@ with torch.no_grad():
 np.save(OUT_FEATURES, np.array(features))
 np.save(OUT_IDS, np.array(study_ids))
 
-print("🎉 Text feature extraction completed")
+print("Text feature extraction completed")
 print("Saved:", OUT_FEATURES)

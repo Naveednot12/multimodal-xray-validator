@@ -12,7 +12,7 @@ IMG_SIZE = 224
 
 df = pd.read_csv(CSV_PATH)
 
-print("✅ CSV loaded")
+print("CSV loaded")
 print("Total studies:", len(df))
 
 saved = 0
@@ -43,8 +43,8 @@ for idx, row in df.iterrows():
         saved += 1
 
     if idx % 5000 == 0:
-        print(f"🖼️ Processed studies: {idx}")
+        print(f"Processed studies: {idx}")
 
-print("🎉 Image preprocessing completed")
+print("Image preprocessing completed")
 print("Total images saved:", saved)
 print("Saved at:", OUTPUT_DIR)

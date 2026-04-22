@@ -56,4 +56,4 @@ print("Feature shape:", features.shape)
 np.save("archive/image_features_densenet.npy", features)
 np.save("archive/image_paths_densenet.npy", np.array(image_paths))
 
-print("✅ DenseNet feature extraction complete.")
+print("DenseNet feature extraction complete.")

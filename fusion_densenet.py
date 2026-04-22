@@ -31,4 +31,4 @@ print("Fused shape:", fused.shape)
 np.save("archive/fused_features_densenet.npy", fused)
 np.save("archive/labels_densenet.npy", labels_aligned)
 
-print("✅ Fusion complete.")
+print("Fusion complete.")

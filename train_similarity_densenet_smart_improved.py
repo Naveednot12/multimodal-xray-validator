@@ -14,7 +14,7 @@ y = np.load("archive/labels_smart.npy")
 print("Dataset shape:", X.shape)
 
 # -----------------------
-# 🔥 FEATURE NORMALIZATION
+# FEATURE NORMALIZATION
 # -----------------------
 scaler = StandardScaler()
 X = scaler.fit_transform(X)
@@ -59,7 +59,7 @@ model = SimilarityModel().to(device)
 criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.parameters(), lr=3e-4)
 
-print("🚀 Training started...")
+print("Training started...")
 
 for epoch in range(35):
     model.train()
@@ -78,7 +78,7 @@ for epoch in range(35):
 
     print(f"Epoch {epoch+1}/35 - Loss: {total_loss:.4f}")
 
-print("\n📊 Evaluating...")
+print("\n Evaluating...")
 
 model.eval()
 with torch.no_grad():
@@ -102,7 +102,7 @@ acc = accuracy_score(y_test.numpy(), final_preds)
 prec = precision_score(y_test.numpy(), final_preds)
 rec = recall_score(y_test.numpy(), final_preds)
 
-print("\n📊 Evaluation Results (Optimized Threshold)")
+print("\n Evaluation Results (Optimized Threshold)")
 print("Best Threshold:", round(best_thresh, 2))
 print("Accuracy :", round(acc, 4))
 print("Precision:", round(prec, 4))
@@ -110,4 +110,4 @@ print("Recall   :", round(rec, 4))
 
 torch.save(model.state_dict(), "archive/similarity_model_smart_improved.pth")
 
-print("\n✅ Training complete.")
+print("\n Training complete.")

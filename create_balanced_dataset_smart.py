@@ -103,4 +103,4 @@ print("Label distribution:", np.unique(y, return_counts=True))
 np.save("archive/fused_features_smart.npy", X)
 np.save("archive/labels_smart.npy", y)
 
-print("✅ Smart balanced dataset created.")
+print("Smart balanced dataset created.")
