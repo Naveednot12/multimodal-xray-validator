@@ -6,7 +6,7 @@ import re
 INPUT_CSV = r"D:\Final yr Project Dataset\archive\paired_mimic_cxr.csv"
 OUTPUT_CSV = r"D:\Final yr Project Dataset\archive\paired_mimic_cxr_with_text.csv"
 
-print("🔹 Script started")
+print(" Script started")
 
 # ================= CHECK INPUT CSV =================
 if not os.path.exists(INPUT_CSV):
@@ -58,7 +58,7 @@ for i, row in df.iterrows():
     cleaned_reports.append(cleaned)
 
     if i % 5000 == 0:
-        print(f"🔄 Processed {i} reports")
+        print(f" Processed {i} reports")
 
 print("Report processing finished")
 
