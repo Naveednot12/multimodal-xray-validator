@@ -1,2 +1,0 @@
-cd "D:\Final yr Project Dataset\frontend"
-py -3.10 -m streamlit run app.py
