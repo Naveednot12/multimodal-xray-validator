@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score
 from sklearn.preprocessing import StandardScaler
 from torch.utils.data import DataLoader, TensorDataset
 
-print("🔄 Loading dataset...")
+print(" Loading dataset...")
 X = np.load("archive/fused_features_smart.npy")
 y = np.load("archive/labels_smart.npy")
 
